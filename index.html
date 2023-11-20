@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Invoice Template</title>
+    <style>
+        h1,
+        h3,
+        h4,
+        li,
+        p {
+            font-family: sans-serif !important;
+        }
+
+        .Invoice-template .container {
+            border: 1px solid #fafafa;
+            width: 100%;
+            max-width: 624px;
+            margin: auto;
+            padding: 0 15px;
+            background-color: #fafafa;
+        }
+
+        .Invoice-template-row {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Invoice-template-row .invoice-number {
+            width: 60%;
+            padding: 0;
+        }
+
+        .Invoice-template-row .invoice-number h1 {
+            font-size: 46px;
+            font-family: sans-serif;
+            font-weight: 600;
+            display: block;
+            margin: 0;
+        }
+
+        .Invoice-template-row .invoice-number .invoice-row {
+            display: flex;
+            justify-content: start;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .Invoice-template-row .invoice-number .invoice-row .invoice-col {
+            margin: 0 15px;
+        }
+
+        .Invoice-template-row .invoice-number .invoice-row .invoice-col p {
+            margin: 5px 0;
+            color: #7e7e7e;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+
+        .Invoice-template-row .invoice-number .invoice-row .invoice-col h3 {
+            margin: 3px 0;
+            color: #000;
+            font-size: 22px;
+            text-transform: capitalize;
+        }
+
+        .Invoice-template-row .logo-image {
+            width: 40%;
+            padding: 0;
+            display: flex;
+            justify-content: end;
+            align-items: start;
+        }
+
+        .Invoice-template-row .logo-image img {
+            width: 100%;
+            max-width: 150px;
+        }
+
+        .build-no {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            padding: 0;
+            margin: 20px 0 0 0;
+        }
+
+        .build-no ul li,
+        .build-no ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .build-no ul {
+            margin: 10px 0 0 0;
+        }
+
+        .build-no ul li {
+            margin: 3px 0;
+            font-size: 16px;
+            color: #7e7e7e;
+        }
+
+        .build-no .build-col h4 {
+            margin: 0;
+        }
+
+        .footer-section {
+            padding: 20px 0;
+            margin: 0;
+            width: 100%;
+            display: block;
+            background-color: #2C427D;
+        }
+
+        .footer-section .footer-logo {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width: 100%;
+        }
+
+        .footer-section .footer-logo p {
+            font-size: 16px;
+            font-family: sans-serif;
+            margin-right: 15px;
+            color: #fff;
+        }
+
+        .footer-section .footer-logo img {
+            padding-right: 15px;
+        }
+
+        /* table design css code */
+        .table-invoide {
+            margin: 50px 0;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        tbody td,
+        thead th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        /* table design css code */
+    </style>
+</head>
+
+<body>
+    <main class="Invoice-template">
+        <div class="container">
+            <div class="Invoice-template-row">
+                <div class="invoice-number">
+                    <h1>INVOICE</h1>
+                </div>
+                <div class="logo-image">
+                    <img src="assets/images/logo01.png" alt="logo-image">
+                </div>
+            </div>
+            <div class="build-no">
+                <div class="build-col">
+                    <h4>Billed to</h4>
+                    <ul>
+                        <li>Client Name</li>
+                        <li>Street Address</li>
+                        <li>City, state, Country</li>
+                        <li>Zip Code</li>
+                        <li>Mobile No.</li>
+                    </ul>
+                </div>
+                <div class="build-col">
+                    <h4>Your Company name</h4>
+                    <ul>
+                        <li>Mohd Alam</li>
+                        <li>123 Your Street</li>
+                        <li>Noida, Gaziabad, Khora</li>
+                        <li>244303</li>
+                        <li>935493094</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="table-invoide">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>DESCRIPTION</th>
+                            <th>UNIT COST</th>
+                            <th>QTY/HRL RATE</th>
+                            <th>AMOUNT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Your item name</td>
+                            <td>&#8377; 20</td>
+                            <td>3</td>
+                            <td>&#8377; 200</td>
+                        </tr>
+                        <tr>
+                            <td>Your item name</td>
+                            <td>&#8377; 20</td>
+                            <td>3</td>
+                            <td>&#8377; 200</td>
+                        </tr>
+                        <tr>
+                            <td>Your item name</td>
+                            <td>&#8377; 20</td>
+                            <td>3</td>
+                            <td>&#8377; 200</td>
+                        </tr>
+                        <tr>
+                            <td>Your item name</td>
+                            <td>&#8377; 20</td>
+                            <td>3</td>
+                            <td>&#8377; 200</td>
+                        </tr>
+                        <tr>
+                            <td>Your item name</td>
+                            <td>&#8377; 20</td>
+                            <td>3</td>
+                            <td>&#8377; 200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <footer class="footer-section">
+                <div class="footer-logo">
+                    <p>Ebhuktan Jivan aasan</p>
+                    <img src="assets/images/logo.png" alt="footer-log">
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
